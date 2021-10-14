@@ -1,0 +1,16 @@
+def palindrom(palim_str):
+  r = palim_str[::-1]
+  if palim_str == r:
+    print ('its palindrom')
+  else:
+    print ('{} not palimdrom'.format(palim_str))
+palindrom('kanabk')
+
+# here palindrom() function is checking for only one string
+# but if we need to check for multiple string we can provide that by using list 
+# and we can use map function to iterate for every elements of the list & can call the palindrom function
+# map function takes two argu function name & iterable
+# by using the following  
+
+str_lst = ['aba','abcd','kanak','iti','cbccbc']
+list(map(palindrom, str_lst))
