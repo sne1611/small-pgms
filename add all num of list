@@ -1,0 +1,10 @@
+#   to add all the numbers of list
+
+from functools import *
+
+import operator
+  
+# We double all numbers using map()
+numbers = (1, 2, 3, 4)
+result = reduce(operator.add, numbers)
+print(result)
