@@ -1,0 +1,17 @@
+# 0 1 1 2 3 5 
+# 1 2 n
+#   1 2 n
+
+num = input('enter upto fibonacci series')
+num = int(num)
+first = 0
+second = 1
+print (first,second)
+i = 0
+while i <= num:
+  nextNum = first + second
+  first = second
+  second = nextNum
+  print (nextNum)
+  i = i + 1
+
